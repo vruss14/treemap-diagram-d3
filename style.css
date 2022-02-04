@@ -7,7 +7,7 @@
 
 g text {
     color: black;
-    font-size: 8px;
+    font-size: 9px;
     inline-size: 100px;
     overflow-wrap: break-word;
 }
@@ -23,7 +23,7 @@ g text {
     padding: 2rem 1rem 1rem 1rem;
     position: absolute;
     top: 0%;
-    left: 70%;
+    left: 80%;
     text-align: center;
     visibility: hidden;
     width: 350px;
@@ -31,4 +31,9 @@ g text {
 
 .tile:hover {
     cursor: pointer;
+}
+
+.tile {
+    stroke: white;
+    stroke-width: 1;
 }

@@ -49,6 +49,7 @@ function visualizeData(data) {
     })
 
     // Each group has several tiles (the games)
+    // Every group is a different color
 
     groupElement.append('rect')
     .attr('class', 'tile')
@@ -118,10 +119,21 @@ function visualizeData(data) {
         .style('visibility', 'hidden')
     })
 
+    // Create a text element where each word is on a new line (split by spaces)
+
     groupElement.append('text')
-    .text((item) => item.data.name)
-    .attr('x', 5)
-    .attr('y', 20)
+    .selectAll('tspan')
+    .data((item) => {
+        return item.data.name.split(' ');
+    })
+    .enter()
+    .append('tspan')
+    .attr('x', 10)
+    .attr('y', (item, index) => {
+        return 15 + (index * 10)
+    })
+    .text((item) => item)
+
 }
 
 fetchData();
