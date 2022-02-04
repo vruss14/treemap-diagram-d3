@@ -11,16 +11,17 @@
     </head>
     <body class="bg-dark text-dark">
         <main class="d-flex min-vh-100 justify-content-center align-items-center" id="main">
-            <div id="treemap-container" class="container-fluid d-flex justify-content-center align-items-center flex-column bg-light my-auto ml-3 mr-3 p-2 col-8 border border-info rounded">
+            <div id="treemap-container" class="container-fluid d-flex justify-content-center align-items-center flex-column bg-light my-auto ml-3 mr-3 p-2 col-11 border border-info rounded">
                 <h1 class="fs-3 text-center mt-3 mb-3" id="title">Video Game Sales</h1>
                 <h2 class="fs-5 text-center mb-3" id="description">Grouped by platform</h2>
                 <div id="tooltip"></div>
             </div>
-
-            <div class="col-2 bg-light" id="legend-wrapper">
-                <h3 class="fs-5 m-3">Legend</h3>
-            </div>
         </main>
+
+        <div class="col-6 bg-light d-flex flex-column justify-content-center align-items-center" id="legend-wrapper">
+            <h3 class="fs-5 m-3">Legend</h3>
+            <svg id="legend"></svg>
+        </div>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.3.0/d3.min.js"></script>
         <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
