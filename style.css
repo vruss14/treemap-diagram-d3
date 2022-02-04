@@ -15,3 +15,20 @@ g text {
 #legend {
     margin-left: 4rem;
 }
+
+#tooltip {
+    background-color: black;
+    border: 2px solid white;
+    color: white;
+    padding: 2rem 1rem 1rem 1rem;
+    position: absolute;
+    top: 0%;
+    left: 70%;
+    text-align: center;
+    visibility: hidden;
+    width: 350px;
+}
+
+.tile:hover {
+    cursor: pointer;
+}

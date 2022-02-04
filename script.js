@@ -99,6 +99,24 @@ function visualizeData(data) {
     .attr('data-value', (item) => item.data.value)
     .attr('width', (item) => item.x1 - item.x0)
     .attr('height', (item) => item.y1 - item.y0)
+    .on('mouseover', (event) => {
+        let item = event.target.__data__;
+
+        tooltip.transition()
+        .style('visibility', 'visible')
+
+        tooltip.attr('data-value', item.data.value)
+        
+        tooltip.html(`
+        <p>Name: ${item.data.name}</p>
+        <p>Category: ${item.data.category}</p>
+        <p>Value: ${item.data.value}</p>`)
+
+    })
+    .on('mouseout', () => {
+        tooltip.transition()
+        .style('visibility', 'hidden')
+    })
 
     groupElement.append('text')
     .text((item) => item.data.name)
