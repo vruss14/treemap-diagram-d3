@@ -11,3 +11,7 @@ g text {
     inline-size: 100px;
     overflow-wrap: break-word;
 }
+
+#legend {
+    margin-left: 4rem;
+}
