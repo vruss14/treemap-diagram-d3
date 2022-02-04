@@ -26,7 +26,9 @@ No installation steps are required to view this project. The application's sourc
 
 ## Usage
 
-This webpage is best viewed on desktop devices.
+This webpage is best viewed on desktop devices. Below is a screenshot of the page:
+
+![Treemap Diagram Visualization](treemap-desktop.png)
 
 ## Credits
 
